@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,500&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   /* font-weight:; */
 }
 
@@ -78,7 +78,7 @@ header ul li a {
 
 .content .textbox h2 span {
   color: #017143;
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 900;
   font-style: italic;
 }
