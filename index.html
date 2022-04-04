@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starbucks!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section>
+      <div class="circle"></div>
+      <header>
+        <a href="#"><img src="./images/logo.png" class="logo" /></a>
+
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Order</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+
+      <div class="content">
+        <div class="textbox">
+          <h2>It's not just Coffee <br /><span> It's <span>Starbucks</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+            cupiditate quae ullam nisi reiciendis incidunt at facere illo vitae
+            sit delectus quisquam doloribus optio laboriosam, aspernatur
+            doloremque asperiores eos esse?Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+
+        <div class="imgBox">
+          <img src="./images/img1.png" alt="starbucks" class="starbucks" />
+        </div>
+      </div>
+
+      <ul class="thumb">
+        <li><img id="thumb1" src="./images/thumb1.png" onclick="swapImage('./images/img1.png'); swapCircleColor('#017143')"></li>
+        <li><img id="thumb2" src="./images/thumb2.png" onclick="swapImage('./images/img2.png'); swapCircleColor('#eb7495')"></li>
+        <li><img id="thumb3" src="./images/thumb3.png" onclick="swapImage('./images/img3.png'); swapCircleColor('#d752b1')"></li>
+      </ul>
+
+      <ul class="sci">
+        <li><a href="#"><img src="./images/facebook.png" alt=""></a></li>
+        <li><a href="#"><img src="./images/twitter.png" alt=""></a></li>
+        <li><a href="#"><img src="./images/instagram.png" alt=""></a></li>
+      </ul>
+    </section>
+  </body>
+
+
+  <!-- JAVASCRIPT -->
+
+  <script type="text/javascript">
+    swapImage = (slider) => {
+      document.querySelector('.starbucks').src = slider
+    }
+
+    swapCircleColor = (color) => {
+      const circle = document.querySelector('.circle')
+
+      circle.style.background = color
+    }
+  </script>
+</html>
