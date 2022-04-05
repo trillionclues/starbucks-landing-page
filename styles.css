@@ -50,9 +50,15 @@ header ul li {
 header ul li a {
   display: inline-block;
   color: #333;
-  font-weight: 400;
+
   margin-left: 40px;
   text-decoration: none;
+  font-family: 'Keania One', cursive;
+  font-weight: 500;
+}
+
+header ul li a:hover {
+  color: #017143;
 }
 
 /* content + image */
@@ -172,4 +178,105 @@ header ul li a {
   width: 100%;
   height: 100%;
   clip-path: circle(600px at right 800px);
+}
+
+/* media query */
+
+@media only screen and (max-width: 768px) {
+  section {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header {
+    position: absolute;
+    width: 100%;
+    padding: 30px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  header .logo {
+    position: relative;
+    max-width: 60%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header ul li a {
+    margin-left: 20px;
+  }
+
+  .content {
+    position: relative;
+    /* padding-top: 250px; */
+    padding: 10em 30px;
+    display: flex;
+  }
+
+  .content .textbox {
+    position: relative;
+    max-width: 50px;
+  }
+
+  .content .textbox h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0;
+  }
+
+  .content .textbox span {
+    margin-top: 15rem;
+    padding: 2;
+  }
+
+  .content .textbox p {
+    width: 100%;
+  }
+
+  .content .textbox a {
+    margin-top: 20px;
+    padding: 8px 50px;
+    color: #fff;
+    border-radius: 40px;
+  }
+
+  .content .imgBox {
+    width: 300px;
+    display: flex;
+    justify-content: flex-end;
+    /* padding-right: 50px;
+    margin-top: 50px; */
+  }
+
+  .content .imgBox img {
+    max-width: 340px;
+  }
+
+  /* circle */
+  .circle {
+    width: 100%;
+    height: 100%;
+    clip-path: circle(400px at right 800px);
+  }
+
+  /* socials */
+  .sci {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .sci li a {
+    margin-top: 150rem;
+    filter: invert(0);
+    padding: 0 30px;
+  }
 }
